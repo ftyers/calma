@@ -1632,7 +1632,6 @@ crh	ortasında	orta	NOUN	Case=Loc|Number[psor]=Sing,Plur|Person[psor]=3
 crh	oquvını	oqu	VERB	Case=Acc|Missing=ger_abst|Number[psor]=Sing,Plur|Person[psor]=3|Valency=2
 crh	oquvını	oquv	NOUN	Case=Acc|Number[psor]=Sing,Plur|Person[psor]=3
 crh	öldürildi	öldür	VERB	Aspect=Perf|Number=Sing|Person=3|Tense=Past|Valency=2|VerbForm=Fin|Voice=Pass
-crh	olamadı	ol	VERB	Aspect=Perf|Missing=abil|Number=Sing|Person=3|Polarity=Neg|Tense=Past|Valency=1|VerbForm=Fin
 crh	oğraşa	oğra	VERB	Aspect=Imp|Deriv=Coop|Valency=1|VerbForm=Conv
 crh	oğraşa	oğra	VERB	Deriv=Coop|Number=Sing|Person=3|Tense=Aor|Valency=1|VerbForm=Fin
 crh	oğlan	oğlan	NOUN	Case=Nom
@@ -4389,8 +4388,6 @@ crh	tecribesini	tecribe	NOUN	Case=Acc|Number[psor]=Sing,Plur|Person[psor]=3
 crh	tay	tay	VERB	Mood=Imp|Number=Sing|Person=2|Valency=1|VerbForm=Fin
 crh	tayana	tayan	VERB	Aspect=Imp|Valency=1|VerbForm=Conv
 crh	tayana	tayan	VERB	Number=Sing|Person=3|Tense=Aor|Valency=1|VerbForm=Fin
-crh	tayama	tay	VERB	Missing=abil|Mood=Imp|Number=Sing|Person=2|Polarity=Neg|Valency=1|VerbForm=Fin
-crh	tayama	tayama	NOUN	Case=Nom
 crh	tat	tat	NOUN	Case=Nom
 crh	tatarlarınıñ	tatar	NOUN	Case=Gen|Number=Plur|Number[psor]=Sing,Plur|Person[psor]=3
 crh	tatarlarından	tatar	NOUN	Case=Abl|Number=Plur|Number[psor]=Sing,Plur|Person[psor]=3
@@ -4921,7 +4918,6 @@ crh	öldüre	öldür	VERB	Aspect=Imp|Valency=2|VerbForm=Conv
 crh	öldüre	öldür	VERB	Number=Sing|Person=3|Tense=Aor|Valency=2|VerbForm=Fin
 crh	olduqça	olduqça	ADV	_
 crh	olasıñız	ol	VERB	Number=Plur|Person=2|Tense=Aor|Valency=1|VerbForm=Fin
-crh	olamay	ol	VERB	Missing=abil|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|Valency=1|VerbForm=Fin
 crh	olacağı	ol	VERB	Case=Nom|Number[psor]=Sing,Plur|Person[psor]=3|Tense=Fut|Valency=1|VerbForm=Vnoun
 crh	oktava	oktava	NOUN	Case=Nom
 crh	oktavağa	oktava	NOUN	Case=Dat
@@ -8341,8 +8337,6 @@ crh	qurulğanından	qur	VERB	Case=Abl|Number[psor]=Sing,Plur|Person[psor]=3|Tens
 crh	qurulğanda	qur	VERB	Case=Loc|Tense=Past|Valency=2|VerbForm=Vnoun|Voice=Pass
 crh	qurulğandan	qur	VERB	Case=Abl|Tense=Past|Valency=2|VerbForm=Vnoun|Voice=Pass
 crh	qurtulmaq	qurtul	VERB	Case=Nom|Valency=1|VerbForm=Vnoun
-crh	qurtulamağan	qurtul	VERB	Missing=abil|Number=Sing|Person=3|Polarity=Neg|Tense=Past|Valency=1|VerbForm=Fin
-crh	qurtulamadı	qurtul	VERB	Aspect=Perf|Missing=abil|Number=Sing|Person=3|Polarity=Neg|Tense=Past|Valency=1|VerbForm=Fin
 crh	qurşunnen	qurşun	NOUN	Case=Ins
 crh	qur	qur	VERB	Mood=Imp|Number=Sing|Person=2|Valency=2|VerbForm=Fin
 crh	qurması	qur	VERB	Case=Nom|Number[psor]=Sing,Plur|Person[psor]=3|Valency=2|VerbForm=Vnoun
@@ -8596,8 +8590,6 @@ crh	qaytarğan	qaytar	VERB	Number=Sing|Person=3|Tense=Past|Valency=2|VerbForm=Fi
 crh	qaytaracaq	qaytar	VERB	Tense=Fut|Valency=2|VerbForm=Part
 crh	qaytaracaq	qaytar	VERB	Case=Nom|Tense=Fut|Valency=2|VerbForm=Vnoun
 crh	qaytaracaq	qaytar	VERB	Number=Sing|Person=3|Tense=Fut|Valency=2|VerbForm=Fin
-crh	qaytama	qayt	VERB	Missing=abil|Mood=Imp|Number=Sing|Person=2|Polarity=Neg|Valency=1|VerbForm=Fin
-crh	qaytamadı	qayt	VERB	Aspect=Perf|Missing=abil|Number=Sing|Person=3|Polarity=Neg|Tense=Past|Valency=1|VerbForm=Fin
 crh	qaynatası	qaynata	NOUN	Case=Nom|Number[psor]=Sing,Plur|Person[psor]=3
 crh	qayış	qayış	NOUN	Case=Nom
 crh	qayışnen	qayış	NOUN	Case=Ins
@@ -9157,8 +9149,6 @@ crh	öldürdiler	öldür	VERB	Aspect=Perf|Number=Plur|Person=3|Tense=Past|Valenc
 crh	ölçeştirme	ölçeştir	VERB	Case=Nom|Valency=2|VerbForm=Vnoun
 crh	ölçeştirme	ölçeştir	VERB	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|Valency=2|VerbForm=Fin
 crh	olamız	ol	VERB	Number=Plur|Person=1|Tense=Aor|Valency=1|VerbForm=Fin
-crh	olamadım	ol	VERB	Aspect=Perf|Missing=abil|Number=Sing|Person=1|Polarity=Neg|Tense=Past|Valency=1|VerbForm=Fin
-crh	olamadılar	ol	VERB	Aspect=Perf|Missing=abil|Number=Plur|Person=3|Polarity=Neg|Tense=Past|Valency=1|VerbForm=Fin
 crh	olacaqlarına	ol	VERB	Case=Dat|Number=Plur|Number[psor]=Sing,Plur|Person[psor]=3|Tense=Fut|Valency=1|VerbForm=Vnoun
 crh	okkupatsiya	okkupatsiya	NOUN	Case=Nom
 crh	okeanlarına	okean	NOUN	Case=Dat|Number=Plur|Number[psor]=Sing,Plur|Person[psor]=3
@@ -11923,8 +11913,6 @@ crh	çalışma	çal	VERB	Deriv=Coop|Mood=Imp|Number=Sing|Person=2|Polarity=Neg|V
 crh	çalışma	çalış	VERB	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|Valency=1|VerbForm=Fin
 crh	çalışaraq	çal	VERB	Aspect=Imp|Deriv=Coop|Valency=2|VerbForm=Conv
 crh	çalışaraq	çalış	VERB	Aspect=Imp|Valency=1|VerbForm=Conv
-crh	çalışamadı	çal	VERB	Aspect=Perf|Deriv=Coop|Missing=abil|Number=Sing|Person=3|Polarity=Neg|Tense=Past|Valency=2|VerbForm=Fin
-crh	çalışamadı	çalış	VERB	Aspect=Perf|Missing=abil|Number=Sing|Person=3|Polarity=Neg|Tense=Past|Valency=1|VerbForm=Fin
 crh	çalınğan	çal	VERB	Tense=Past|Valency=2|VerbForm=Part|Voice=Pass
 crh	çalınğan	çal	VERB	Aspect=Perf|Valency=2|VerbForm=Conv|Voice=Pass
 crh	çalınğan	çal	VERB	Case=Nom|Tense=Past|Valency=2|VerbForm=Vnoun|Voice=Pass
@@ -12323,3 +12311,13 @@ crh	balıqçılar	balıqçı	NOUN	Case=Nom|Number=Plur
 crh	baletke	balet	NOUN	Case=Dat
 crh	balet	balet	NOUN	Case=Nom
 crh	bal	bal	NOUN	Case=Nom
+crh	balavuz	balavuz	NOUN	Case=Nom
+crh	balasından	bala	NOUN	Case=Abl|Number[psor]=Sing,Plur|Person[psor]=3
+crh	balasına	bala	NOUN	Case=Dat|Number[psor]=Sing,Plur|Person[psor]=3
+crh	balanıñ	bala	NOUN	Case=Gen
+crh	balanen	bala	NOUN	Case=Ins
+crh	balalıq	balalıq	NOUN	Case=Nom
+crh	balalığını	balalıq	NOUN	Case=Acc|Number[psor]=Sing,Plur|Person[psor]=3
+crh	balalığından	balalıq	NOUN	Case=Abl|Number[psor]=Sing,Plur|Person[psor]=3
+crh	balalığında	balalıq	NOUN	Case=Loc|Number[psor]=Sing,Plur|Person[psor]=3
+crh	balalayka	balalayka	NOUN	Case=Nom
