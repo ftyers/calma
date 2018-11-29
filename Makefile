@@ -2,10 +2,18 @@ ONMTPREPROCESS=~/OpenNMT-py/preprocess.py
 
 LANGS=ast bak cat crh est fin fra ita kaz kir kpv mdf mhr mrj myv por sme spa tat tur udm
 
+all: opennmtdata models results eval
+
 clean:
 	rm -f opennmtdata/*pt opennmtdata/*txt models/*pt results/*txt
 
 opennmtdata: $(LANGS:%=opennmtdata/%-src-train.txt) $(LANGS:%=opennmtdata/%.train.1.pt)
+
+models: $(LANGS:%=models/%-model_step_10000.pt)
+
+results: $(LANGS:%=results/%-src-test.txt.sys)
+
+eval: $(LANGS:%=evaluation/%-src-test.txt.sys.eval)
 
 opennmtdata/%-src-train.txt: data/%.ud
 	python3 scripts/generate_onmt_data.py opennmtdata $*
