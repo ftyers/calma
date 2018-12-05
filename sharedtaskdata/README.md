@@ -4,7 +4,7 @@
 
 ### Uncovered data
 
-We provide fully annotated training and development sets for the
+We provide fully annotated _uncovered_ training and development sets for the
 target language and related languages. Below, you can see an example
 of the data format from `train/ast-track2-uncovered`:
 
@@ -25,7 +25,7 @@ on several lines with different POS and morphological features.
 
 ### Covered data
 
-We also provide covered data sets which are used as input data for
+We also provide _covered_ data sets which are used as input data for
 the analysis system during development and testing. Here each word
 form occurs exactly once and the lemma, POS and morphological features
 fields are empty. This is an example from `dev/ast-uncovered`
