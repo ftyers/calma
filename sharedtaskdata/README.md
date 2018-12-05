@@ -1,5 +1,23 @@
 # Shared Task on Related Language Morphological Analysis
 
+## Tracks
+
+There three different tracks with varying degrees of supervision.
+
+**Track 1** is a traditional supervised learning scenario. Competitors
+get annotated data from the target languages and learn a model which
+can analyze unseen target language word forms.
+
+**Track 2** provides additional supervision in form of related
+language data. Competitors get annotated data both for the target
+language and related languages. They then learn a model which can
+analyze unseen target language forms.
+
+**Track 3** does not provide any target language
+supervision. Competitors get no annotated target language
+data. Instead they get annotated data from related languages and learn
+a model which can analyze unseen target language forms.
+
 ## Data Formats
 
 ### Uncovered data
@@ -50,24 +68,6 @@ ast    franxes      franxa       NOUN    Gender=Fem|Number=Plur
 ast    amosaben     amosar       VERB    Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin
 ast    principiu    principiu    NOUN    Gender=Masc|Number=Sing
 ```
-
-## Tracks
-
-There three different tracks with varying degrees of supervision.
-
-**Track 1** is a traditional supervised learning scenario. Competitors
-get annotated data from the target languages and learn a model which
-can analyze unseen target language word forms.
-
-**Track 2** provides additional supervision in form of related
-language data. Competitors get annotated data both for the target
-language and related languages. They then learn a model which can
-analyze unseen target language forms.
-
-**Track 3** does not provide any target language
-supervision. Competitors get no annotated target language
-data. Instead they get annotated data from related languages and learn
-a model which can analyze unseen target language forms.
 
 ## Language codes
 
