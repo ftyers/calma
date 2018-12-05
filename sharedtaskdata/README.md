@@ -31,10 +31,10 @@ form occurs exactly once and the lemma, POS and morphological features
 fields are empty. This is an example from `dev/ast-uncovered`
 
 ```
-ast	otomana	_	_	_
-ast	franxes	_	_	_
-ast	amosaben	_	_	_
-ast	principiu	_	_	_
+ast	otomana      _    _    _
+ast	franxes      _    _    _
+ast	amosaben     _    _    _
+ast	principiu    _    _    _
 ```
 
 When your system fills in analyses, you should output one line for
