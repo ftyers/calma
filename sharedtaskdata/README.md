@@ -1,4 +1,4 @@
-# Shared Task on Related Language Morphological Analysis
+# Shared Task on Cross-Lingual Morphological Analysis
 
 ## Tracks
 
