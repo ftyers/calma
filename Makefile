@@ -1,6 +1,9 @@
 ONMTPREPROCESS=~/OpenNMT-py/preprocess.py
 
 LANGS=ast bak cat crh est fin fra ita kaz kir kpv mdf mhr mrj myv por sme spa tat tur udm
+ROMLANGS=ast fra por ita cat spa
+TURLANGS=crh bak kaz kir tat tur
+GERLANGS=
 
 all: opennmtdata models results eval
 
@@ -40,3 +43,12 @@ results/%-src-test.txt.sys: results/%-src-test.txt.nbest.out
 
 evaluation/%-src-test.txt.sys.eval: results/%-src-test.txt.sys
 	python3 scripts/compute_fscore.py results/$*-src-test.txt.sys opennmtdata/$*-tgt-test.all.txt > $@
+
+sharedtaskdata/train/ast-track1:
+	python3 scripts/generate_shared_task_data.py $(ROMLANGS)
+
+sharedtaskdata/train/crh-track1:
+	python3 scripts/generate_shared_task_data.py $(TURLANGS)
+
+sharedtaskdata/train/GER-track1:
+	python3 scripts/generate_shared_task_data.py $(GERLANGS)
