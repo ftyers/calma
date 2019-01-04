@@ -100,7 +100,8 @@ TBD
 
 ### Baseline Results for Development Data
 
-```python3 scripts/eval_tabular.py results/ast-track1-dev-covered.sys dev/ast-uncovered
+```
+python3 scripts/eval_tabular.py results/ast-track1-dev-covered.sys dev/ast-uncovered
 
 Recall for analysis: 77.28
 Precision for analysis: 70.34
@@ -187,11 +188,13 @@ F1-score for lemma: 58.92
 
 Recall for tag: 38.19
 Precision for tag: 46.95
-F1-score for tag: 42.12```
+F1-score for tag: 42.12
+```
 
 ### Baseline Results for Test Data
 
-```python3 scripts/eval_tabular.py results/ast-track1-test-covered.sys test/ast-uncovered
+```
+python3 scripts/eval_tabular.py results/ast-track1-test-covered.sys test/ast-uncovered
 
 Recall for analysis: 75.05
 Precision for analysis: 69.30
@@ -278,4 +281,5 @@ F1-score for lemma: 57.63
 
 Recall for tag: 38.23
 Precision for tag: 45.85
-F1-score for tag: 41.69```
+F1-score for tag: 41.69
+```
