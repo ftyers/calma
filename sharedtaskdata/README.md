@@ -11,7 +11,7 @@ can analyze unseen target language word forms.
 **Track 2** does not provide any annotated target language
 data. Instead competitors get annotated data from related languages and learn
 a model which can analyze unseen target language forms. In addition,
-competitors unannotated get data from the target language.
+competitors get unannotated get data from the target language.
 
 ## Data Formats
 
