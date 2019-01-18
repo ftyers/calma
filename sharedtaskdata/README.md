@@ -90,7 +90,7 @@ ast    principiu    principiu    NOUN    Gender=Masc|Number=Sing
 | ita  | Italian       |
 | por  | Portuguese    |
 | spa  | Spanish       |
-
+| ???  | Surprise Language |
 
 ### Turkic Languages
 
@@ -101,7 +101,8 @@ ast    principiu    principiu    NOUN    Gender=Masc|Number=Sing
 | kaz  | Kazakh        |
 | kir  | Kyrgyz        |
 | tat  | Tatar         |
-| tur  | Turkish       |  
+| tur  | Turkish       | 
+| ???  | Surprise Language |
 
 ### Baseline Results for Development Data
 
