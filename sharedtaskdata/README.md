@@ -16,6 +16,8 @@ data. Instead competitors get annotated data from related languages and learn
 a model which can analyze unseen target language forms. In addition,
 competitors are allowed to use the input forms in the test set when training their systems.
 
+We encourage participants to provide thorough error analysis.
+
 ## Timeline
 
 * Training set release: February 5, 2019
