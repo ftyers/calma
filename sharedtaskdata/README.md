@@ -2,21 +2,16 @@
 
 ## Tracks
 
-There three different tracks with varying degrees of supervision.
+There two different tracks with different degrees of supervision.
 
 **Track 1** is a traditional supervised learning scenario. Competitors
 get annotated data from the target languages and learn a model which
 can analyze unseen target language word forms.
 
-**Track 2** provides additional supervision in form of related
-language data. Competitors get annotated data both for the target
-language and related languages. They then learn a model which can
-analyze unseen target language forms.
-
-**Track 3** does not provide any target language
-supervision. Competitors get no annotated target language
-data. Instead they get annotated data from related languages and learn
-a model which can analyze unseen target language forms.
+**Track 2** does not provide any annotated target language
+data. Instead competitors get annotated data from related languages and learn
+a model which can analyze unseen target language forms. In addition,
+competitors unannotated get data from the target language.
 
 ## Data Formats
 
@@ -71,10 +66,6 @@ ast    principiu    principiu    NOUN    Gender=Masc|Number=Sing
 
 ## Language codes
 
-### Germanic Languages
-
-TBD
-
 ### Romance Languages
 
 | Code | Language      |
@@ -115,23 +106,7 @@ Recall for tag: 80.65
 Precision for tag: 75.62
 F1-score for tag: 78.05
 
-
 python3 scripts/eval_tabular.py results/ast-track2-dev-covered.sys dev/ast-uncovered
-
-Recall for analysis: 65.71
-Precision for analysis: 57.66
-F1-score for analysis: 61.42
-
-Recall for lemma: 80.92
-Precision for lemma: 68.31
-F1-score for lemma: 74.08
-
-Recall for tag: 75.24
-Precision for tag: 70.50
-F1-score for tag: 72.79
-
-
-python3 scripts/eval_tabular.py results/ast-track3-dev-covered.sys dev/ast-uncovered
 
 Recall for analysis: 43.87
 Precision for analysis: 45.30
@@ -163,21 +138,6 @@ F1-score for tag: 87.30
 
 python3 scripts/eval_tabular.py results/crh-track2-dev-covered.sys dev/crh-uncovered
 
-Recall for analysis: 76.81
-Precision for analysis: 76.01
-F1-score for analysis: 76.41
-
-Recall for lemma: 90.55
-Precision for lemma: 85.57
-F1-score for lemma: 87.99
-
-Recall for tag: 77.61
-Precision for tag: 77.29
-F1-score for tag: 77.45
-
-
-python3 scripts/eval_tabular.py results/crh-track3-dev-covered.sys dev/crh-uncovered
-
 Recall for analysis: 31.24
 Precision for analysis: 38.44
 F1-score for analysis: 34.47
@@ -208,23 +168,7 @@ Recall for tag: 78.44
 Precision for tag: 74.87
 F1-score for tag: 76.61
 
-
 python3 scripts/eval_tabular.py results/ast-track2-test-covered.sys test/ast-uncovered
-
-Recall for analysis: 64.43
-Precision for analysis: 55.49
-F1-score for analysis: 59.63
-
-Recall for lemma: 79.23
-Precision for lemma: 66.03
-F1-score for lemma: 72.03
-
-Recall for tag: 74.57
-Precision for tag: 70.57
-F1-score for tag: 72.51
-
-
-python3 scripts/eval_tabular.py results/ast-track3-test-covered.sys test/ast-uncovered
 
 Recall for analysis: 44.35
 Precision for analysis: 44.41
@@ -255,21 +199,6 @@ F1-score for tag: 88.14
 
 
 python3 scripts/eval_tabular.py results/crh-track2-test-covered.sys test/crh-uncovered
-
-Recall for analysis: 77.54
-Precision for analysis: 76.33
-F1-score for analysis: 76.93
-
-Recall for lemma: 90.66
-Precision for lemma: 84.62
-F1-score for lemma: 87.53
-
-Recall for tag: 78.55
-Precision for tag: 77.90
-F1-score for tag: 78.22
-
-
-python3 scripts/eval_tabular.py results/crh-track3-test-covered.sys test/crh-uncovered
 
 Recall for analysis: 30.53
 Precision for analysis: 36.74
