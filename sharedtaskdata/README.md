@@ -4,7 +4,7 @@ We introduce the task of cross-lingual morphological analysis. Given a word in a
 
 ## Tracks
 
-There are two different tracks with different degrees of supervision.
+In order to investigate the role of related language data, we present two tracks:
 
 **Track 1** is a traditional supervised learning scenario. Competitors
 get annotated data from the target languages and learn a model which
