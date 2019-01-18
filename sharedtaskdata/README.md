@@ -6,12 +6,22 @@ There two different tracks with different degrees of supervision.
 
 **Track 1** is a traditional supervised learning scenario. Competitors
 get annotated data from the target languages and learn a model which
-can analyze unseen target language word forms.
+can analyze unseen target language word forms. In addition,
+competitors are allowed to use the input forms in the test set when training their systems.
 
 **Track 2** does not provide any annotated target language
 data. Instead competitors get annotated data from related languages and learn
 a model which can analyze unseen target language forms. In addition,
-competitors get unannotated get data from the target language.
+competitors are allowed to use the input forms in the test set when training their systems.
+
+## Timeline
+
+* Training set release: February 5, 2019
+* Test set release: March 5, 2019
+* Submissions due: March 8, 2019
+* Results announced: March 12, 2019
+
+On February 5, we release trining sets for Romance languages (Asturian, Catalan, French, Italian, Portuguese, Spanish) and Turkic languages (Bashkir, Crimean Tatar, Kazakh, Kyrgyz, Tatar, Turkish). On March 5, we relase additional training and test sets for two surprise languages. Competitors then train systems on the target language training sets for track 1 and on the related language training sets for track 2 and submit their annotated test sets. We will be evaluating system performance on the surprise languages.   
 
 ## Data Formats
 
