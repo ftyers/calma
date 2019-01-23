@@ -6,15 +6,13 @@ We introduce the task of cross-lingual morphological analysis. Given a word in a
 
 In order to investigate the role of related language data, we present two tracks:
 
-**Track 1** is a traditional supervised learning scenario. Competitors
-get annotated data from the target languages and learn a model which
-can analyze unseen target language word forms. In addition,
-competitors are allowed to use the input forms in the test set when training their systems.
-
-**Track 2** does not provide any annotated target language
-data. Instead competitors get annotated data from related languages and learn
+**Track 1** Competitors get annotated data from related languages and learn
 a model which can analyze unseen target language forms. In addition,
 competitors are allowed to use the input forms in the test set when training their systems.
+
+**Track 2** Competitors get annotated data from related languages and learn
+a model which can analyze unseen target language forms. In addition,
+competitors are allowed to use the input forms in the test set and a plain text dataset when training their systems.
 
 We encourage participants to provide thorough error analysis.
 
@@ -25,7 +23,9 @@ We encourage participants to provide thorough error analysis.
 * Submissions due: March 8, 2019
 * Results announced: March 12, 2019
 
-On February 5, we release trining sets for Romance languages (Asturian, Catalan, French, Italian, Portuguese, Spanish) and Turkic languages (Bashkir, Crimean Tatar, Kazakh, Kyrgyz, Tatar, Turkish). On March 5, we relase additional training and test sets for two surprise languages. Competitors then train systems on the target language training sets for track 1 and on the related language training sets for track 2 and submit their annotated test sets. We will be evaluating system performance on the surprise languages.   
+On February 5, we release training sets for Romance languages (Catalan, French, Italian, Portuguese, Spanish) and Turkic languages (Bashkir, Kazakh, Kyrgyz, Tatar, Turkish). We also release development sets for the Romance language Asturian and the Turkic language Crimean Tatar. In addition, we release unannotated corpora for Asturian and Crimean Tatar.
+
+On March 5, we relase additional test sets for two surprise languages. Additionally, we release unannotated corpora for both of the surprise languages. Competitors then train systems on the related language training sets for track 1 and the related language training set and unannotated data for track 2. They then submit their test set predictions. We will be evaluating system performance on the surprise language test sets.   
 
 ## Data Formats
 
