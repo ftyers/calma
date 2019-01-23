@@ -4,7 +4,7 @@ We introduce the task of cross-lingual morphological analysis. Given a word in a
 
 ## Tracks
 
-We present two tracks: a closed track and an open one.
+We present two tracks: a closed track (1) and a semi-closed one (2).
 
 **Track 1** Competitors get annotated data from related languages and learn
 a model which can analyse unseen target language forms. In addition,
