@@ -1,17 +1,17 @@
 # Shared Task on Cross-Lingual Morphological Analysis
 
-We introduce the task of cross-lingual morphological analysis. Given a word in an unknown related language, for example "navifraghju" ("shipwreck" in Corsican), a human speaker of several related languages is able to deduce that it is a noun in the singular by making deductions from similar words, for example: "naufragi" (Catalan), "naufragio" (Spanish, Italian), "naufrágio" (Portuguese) and "naufrage" (French). In this task we invite participants to create computational models which will be able to do the same. Two language families are represented, Romance (fusional morphology) and Turkic  (agglutinative morphology). 
+We introduce the task of cross-lingual morphological analysis. Given a word in an unknown related language, for example "navifraghju" ("shipwreck" in Corsican), a human speaker of several related languages is able to deduce that it is a noun in the singular by making deductions from similar words, for example: "naufragi" (Catalan), "naufragio" (Spanish, Italian), "naufrágio" (Portuguese) and "naufrage" (French). In this task we invite participants to create computational models which will be able to do the same. Two language families are represented, Romance (fusional morphology) and Turkic (agglutinative morphology). 
 
 ## Tracks
 
 We present two tracks: a closed track and an open one.
 
 **Track 1** Competitors get annotated data from related languages and learn
-a model which can analyze unseen target language forms. In addition,
+a model which can analyse unseen target language forms. In addition,
 competitors are allowed to use the input forms in the test set when training their system.
 
 **Track 2** Competitors get annotated data from related languages as well as an unannotated plain text corpus in the target language. They learn
-a model which can analyze unseen target language forms. In addition,
+a model which can analyse unseen target language forms. In addition,
 competitors are allowed to use the input forms in the test set when training their system.
 
 We encourage participants to provide thorough error analysis.
@@ -23,9 +23,9 @@ We encourage participants to provide thorough error analysis.
 * Submissions due: March 8, 2019
 * Results announced: March 12, 2019
 
-On February 5, we release training sets for Romance languages (Catalan, French, Italian, Portuguese, Spanish) and Turkic languages (Bashkir, Kazakh, Kyrgyz, Tatar, Turkish). We also release development sets for the Romance language Asturian and the Turkic language Crimean Tatar. In addition, we release unannotated corpora for Asturian and Crimean Tatar.
+On February 5, we release training sets for the Romance languages (Catalan, French, Italian, Portuguese, Spanish) and the Turkic languages (Bashkir, Kazakh, Kyrgyz, Tatar, Turkish). We also release development sets for the Romance language Asturian and the Turkic language Crimean Tatar. In addition, we release unannotated corpora for Asturian and Crimean Tatar.
 
-On March 5, we relase additional test sets for two surprise languages. Additionally, we release unannotated corpora for both of the surprise languages. Competitors then train systems on the related language training sets for track 1 and the related language training set and unannotated data for track 2. They then submit their test set predictions. We will be evaluating system performance on the surprise language test sets.   
+On March 5, we release additional test sets for two surprise languages. Additionally, we release unannotated corpora for both of the surprise languages. Competitors then train systems on the related language training sets for track 1 and the related language training set and unannotated data for track 2. They then submit their test set predictions. We will be evaluating system performance on the surprise language test sets.   
 
 ## Data Formats
 
@@ -106,7 +106,7 @@ ast    principiu    principiu    NOUN    Gender=Masc|Number=Sing
 
 ### Baseline Results for Development Data
 
-These are basline results for track 1 on the Asturian and Crimean Tatar development data
+These are baseline results for track 1 on the Asturian and Crimean Tatar development data
 
 ```
 
