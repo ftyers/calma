@@ -4,15 +4,15 @@ We introduce the task of cross-lingual morphological analysis. Given a word in a
 
 ## Tracks
 
-In order to investigate the role of related language data, we present two tracks:
+We present two tracks: a closed track and an open one.
 
 **Track 1** Competitors get annotated data from related languages and learn
 a model which can analyze unseen target language forms. In addition,
-competitors are allowed to use the input forms in the test set when training their systems.
+competitors are allowed to use the input forms in the test set when training their system.
 
-**Track 2** Competitors get annotated data from related languages and learn
+**Track 2** Competitors get annotated data from related languages as well as a plain text dataset in the target language. They learn
 a model which can analyze unseen target language forms. In addition,
-competitors are allowed to use the input forms in the test set and a plain text dataset when training their systems.
+competitors are allowed to use the input forms in the test set when training their system.
 
 We encourage participants to provide thorough error analysis.
 
