@@ -13,7 +13,7 @@ ONMTTEST=~/OpenNMT-py/translate.py
 module purge
 module load python-env/intelpython3.6-2018.3 gcc/5.4.0 cuda/9.0 cudnn/7.1-cuda9
 
-DATA=crh-track2
+DATA=crh-track3
 
 echo $DATA
 
