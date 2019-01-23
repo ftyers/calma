@@ -106,20 +106,9 @@ ast    principiu    principiu    NOUN    Gender=Masc|Number=Sing
 
 ### Baseline Results for Development Data
 
+These are basline results for track 1 on the Asturian and Crimean Tatar development data
+
 ```
-python3 scripts/eval_tabular.py results/ast-track1-dev-covered.sys dev/ast-uncovered
-
-Recall for analysis: 77.28
-Precision for analysis: 70.34
-F1-score for analysis: 73.65
-
-Recall for lemma: 87.10
-Precision for lemma: 79.39
-F1-score for lemma: 83.07
-
-Recall for tag: 80.65
-Precision for tag: 75.62
-F1-score for tag: 78.05
 
 python3 scripts/eval_tabular.py results/ast-track2-dev-covered.sys dev/ast-uncovered
 
@@ -135,20 +124,6 @@ Recall for tag: 59.57
 Precision for tag: 62.84
 F1-score for tag: 61.16
 
-
-python3 scripts/eval_tabular.py results/crh-track1-dev-covered.sys dev/crh-uncovered
-
-Recall for analysis: 90.32
-Precision for analysis: 81.32
-F1-score for analysis: 85.58
-
-Recall for lemma: 95.52
-Precision for lemma: 89.45
-F1-score for lemma: 92.39
-
-Recall for tag: 91.21
-Precision for tag: 83.71
-F1-score for tag: 87.30
 
 
 python3 scripts/eval_tabular.py results/crh-track2-dev-covered.sys dev/crh-uncovered
