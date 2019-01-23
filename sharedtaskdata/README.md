@@ -10,7 +10,7 @@ We present two tracks: a closed track and an open one.
 a model which can analyze unseen target language forms. In addition,
 competitors are allowed to use the input forms in the test set when training their system.
 
-**Track 2** Competitors get annotated data from related languages as well as a plain text corpus in the target language. They learn
+**Track 2** Competitors get annotated data from related languages as well as an unannotated plain text corpus in the target language. They learn
 a model which can analyze unseen target language forms. In addition,
 competitors are allowed to use the input forms in the test set when training their system.
 
