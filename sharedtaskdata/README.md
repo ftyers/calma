@@ -106,7 +106,7 @@ ast    principiu    principiu    NOUN    Gender=Masc|Number=Sing
 
 ### Baseline System
 
-The baseline system formulates morphological analysis as a characterlevel string transduction task. It is implemented using (OpnNMT)[http://opennmt.net/] and uses an LSTM
+The baseline system formulates morphological analysis as a characterlevel string transduction task. It is implemented using [OpenNMT](http://opennmt.net/) and uses an LSTM
 encoder-decoder model with attention for performing the
 string transduction. The model is trained to translate input word forms like "así" (1st person singular past perfect of "asir" [to grab] or the adverb "así" [such] in Spanish) into output analyses:
 ```
@@ -142,7 +142,7 @@ The baseline system is documented in:
 
 ### Running the Baseline System
 
-The current baseline scripts are aimed for a system running (lmod)[https://www.tacc.utexas.edu/research-development/tacc-projects/lmod] and (slurm)[https://slurm.schedmd.com/]. You will probably need to modify the scripts to suit your system.
+The current baseline scripts are aimed for a system running [lmod](https://www.tacc.utexas.edu/research-development/tacc-projects/lmod) and [slurm](https://slurm.schedmd.com/). You will probably need to modify the scripts to suit your system.
 
 To build datasets for OpenNMT, run: 
 ```
