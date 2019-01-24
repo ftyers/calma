@@ -8,7 +8,7 @@
 #SBATCH -e gpu_job.err.%j
 #SBATCH --gres=gpu:k80:1
 #SBATCH                                                                                                                                   
-ONMTTRAIN=~/OpenNMT-py/train.py
+ONMTTEST=~/OpenNMT-py/translate.py
                                            
 module purge
 module load python-env/intelpython3.6-2018.3 gcc/5.4.0 cuda/9.0 cudnn/7.1-cuda9
@@ -16,5 +16,6 @@ module load python-env/intelpython3.6-2018.3 gcc/5.4.0 cuda/9.0 cudnn/7.1-cuda9
 DATA=rom-track2
 
 echo $DATA
-python $ONMTTRAIN -data onmt-data/$DATA -train_steps 10000 -valid_steps 1000 -save_model models/$DATA.model -world_size 1 -gpu_ranks 0 1 -encoder_type brnn
+
+python $ONMTTEST -model models/$DATA.model_step_10000.pt -src onmt-data/$DATA-src-dev.txt -output onmt-data/$DATA-src-dev.txt.out -replace_unk -verbose -gpu 0 -n_best 10 -beam 10 > onmt-data/$DATA-src-dev.txt.nbest.out
 
