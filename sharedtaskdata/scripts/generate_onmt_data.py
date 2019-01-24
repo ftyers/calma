@@ -4,11 +4,11 @@ from random import shuffle
 
 def readanalyses(data,track):
     analyses = {split:dd(set) for split in ['train','dev','test']}
-    for split in ['train','dev','test']:
+    for split in ['train','dev']:
 
         fn = '%s/%s-uncovered' % (split, data)
         if split == 'train':
-            fn = '%s/%s-track%u-uncovered' % (split, data, track)
+            fn = '%s/%s-uncovered' % (split, data)
         if split == 'test':
             fn = '%s/%s-covered' % (split, data)
 
