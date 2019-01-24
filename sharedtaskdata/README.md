@@ -104,13 +104,76 @@ ast    principiu    principiu    NOUN    Gender=Masc|Number=Sing
 | tur  | Turkish       | 
 | ???  | Surprise Language |
 
+### Baseline System
+
+The baseline system formulates morphological analysis as a characterlevel string transduction task. It is implemented using [OpenNMT](http://opennmt.net/) and uses an LSTM
+encoder-decoder model with attention for performing the
+string transduction. The model is trained to translate input word forms like "así" (1st person singular past perfect of "asir" [to grab] or the adverb "así" [such] in Spanish) into output analyses:
+```
+así+ADV
+asir+Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin
+```
+As the example demonstrates, the model needs to be able to generate multiple output analyses
+given an input word form. This is accomplished by extracting several output candidates from the model using beam search and selecting the most probable candidates as
+model outputs. 
+
+The number of outputs from beam search is controlled by a probability threshold hyperparameter `p`. We extract the least number of top scoring candidates whose combined
+probability mass is greater than `p`. Additionally, we restrict the maximal number of
+output candidates using a single hyperparameter `N`. The hyperparamaters `p` and `N`
+are tuned on the development data.
+
+We use the same baseline model for both tracks 1 and 2. This means that the unannotated corpus data is not utilized in any way.
+
+The baseline system is documented in:
+
+```
+@InProceedings{W19-0301,
+  author = 	"Silfverberg, Miikka
+		and Tyers, Francis",
+  title = 	"Data-Driven Morphological Analysis for Uralic Languages",
+  booktitle = 	"Proceedings of the Fifth International Workshop on Computational Linguistics for Uralic Languages",
+  year = 	"2019",
+  publisher = 	"Association for Computational Linguistics",
+  pages = 	"1--14",
+  location = 	"Tartu, Estonia",
+  url = 	"http://aclweb.org/anthology/W19-0301"
+}
+```
+
+### Running the Baseline System
+
+The current baseline scripts are aimed for a system running [lmod](https://www.tacc.utexas.edu/research-development/tacc-projects/lmod) and [slurm](https://slurm.schedmd.com/). You will probably need to modify the scripts to suit your system.
+
+To build datasets for OpenNMT, run: 
+```
+make datasets
+```
+
+To build baseline models, run:
+```
+make trainmodels
+```
+You need to wait until the models are trained. After that, you can test models, by running:
+```
+make testmodels
+make testresults
+```
+
+Now you should have the output files for the Asturian and Crimean Tatar development data in the directory `results`:
+```
+results/rom-track1-dev-covered.sys
+results/rom-track2-dev-covered.sys
+results/tur-track1-dev-covered.sys
+results/tur-track2-dev-covered.sys
+```
+
 ### Baseline Results for Development Data
 
 These are baseline results for track 1 on the Asturian and Crimean Tatar development data
 
 ```
 
-python3 scripts/eval_tabular.py results/ast-track2-dev-covered.sys dev/ast-uncovered
+python3 scripts/eval_tabular.py results/rom-track1-dev-covered.sys dev/rom-uncovered
 
 Recall for analysis: 43.87
 Precision for analysis: 45.30
@@ -124,9 +187,35 @@ Recall for tag: 59.57
 Precision for tag: 62.84
 F1-score for tag: 61.16
 
+python3 scripts/eval_tabular.py results/rom-track2-dev-covered.sys dev/rom-uncovered
 
+Recall for analysis: 43.87
+Precision for analysis: 45.30
+F1-score for analysis: 44.58
 
-python3 scripts/eval_tabular.py results/crh-track2-dev-covered.sys dev/crh-uncovered
+Recall for lemma: 61.66
+Precision for lemma: 58.70
+F1-score for lemma: 60.15
+
+Recall for tag: 59.57
+Precision for tag: 62.84
+F1-score for tag: 61.16
+
+python3 scripts/eval_tabular.py results/tur-track1-dev-covered.sys dev/tur-uncovered
+
+Recall for analysis: 31.24
+Precision for analysis: 38.44
+F1-score for analysis: 34.47
+
+Recall for lemma: 57.54
+Precision for lemma: 60.36
+F1-score for lemma: 58.92
+
+Recall for tag: 38.19
+Precision for tag: 46.95
+F1-score for tag: 42.12
+
+python3 scripts/eval_tabular.py results/tur-track2-dev-covered.sys dev/tur-uncovered
 
 Recall for analysis: 31.24
 Precision for analysis: 38.44
