@@ -110,7 +110,7 @@ These are baseline results for track 1 on the Asturian and Crimean Tatar develop
 
 ```
 
-python3 scripts/eval_tabular.py results/ast-track2-dev-covered.sys dev/ast-uncovered
+python3 scripts/eval_tabular.py results/rom-track1-dev-covered.sys dev/rom-uncovered
 
 Recall for analysis: 43.87
 Precision for analysis: 45.30
@@ -126,7 +126,7 @@ F1-score for tag: 61.16
 
 
 
-python3 scripts/eval_tabular.py results/crh-track2-dev-covered.sys dev/crh-uncovered
+python3 scripts/eval_tabular.py results/tur-track1-dev-covered.sys dev/tur-uncovered
 
 Recall for analysis: 31.24
 Precision for analysis: 38.44
