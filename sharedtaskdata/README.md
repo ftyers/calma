@@ -169,7 +169,7 @@ results/tur-track2-dev-covered.sys
 
 ### Baseline Results for Development Data
 
-These are baseline results for track 1 on the Asturian and Crimean Tatar development data
+These are baseline results for tracks 1 and 2 on the Asturian and Crimean Tatar development data (the track 1 and 2 baseline systems are identical)
 
 ```
 
