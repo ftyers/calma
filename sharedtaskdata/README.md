@@ -124,9 +124,35 @@ Recall for tag: 59.57
 Precision for tag: 62.84
 F1-score for tag: 61.16
 
+python3 scripts/eval_tabular.py results/rom-track2-dev-covered.sys dev/rom-uncovered
 
+Recall for analysis: 43.87
+Precision for analysis: 45.30
+F1-score for analysis: 44.58
+
+Recall for lemma: 61.66
+Precision for lemma: 58.70
+F1-score for lemma: 60.15
+
+Recall for tag: 59.57
+Precision for tag: 62.84
+F1-score for tag: 61.16
 
 python3 scripts/eval_tabular.py results/tur-track1-dev-covered.sys dev/tur-uncovered
+
+Recall for analysis: 31.24
+Precision for analysis: 38.44
+F1-score for analysis: 34.47
+
+Recall for lemma: 57.54
+Precision for lemma: 60.36
+F1-score for lemma: 58.92
+
+Recall for tag: 38.19
+Precision for tag: 46.95
+F1-score for tag: 42.12
+
+python3 scripts/eval_tabular.py results/tur-track2-dev-covered.sys dev/tur-uncovered
 
 Recall for analysis: 31.24
 Precision for analysis: 38.44
