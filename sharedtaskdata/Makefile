@@ -15,21 +15,9 @@ train-%:
 test-%:
 	sbatch baseline/test-$*.sh
 
-results/ast-track1-%-covered.sys: onmt-data/ast-track1-src-%.txt.nbest.out
-	cat $^ | python3 scripts/get-analyses.py 0.8 3 $*/ast-covered > $@
+results/rom-track%-dev-covered.sys: onmt-data/rom-track%-src-dev.txt.nbest.out
+	cat $^ | python3 scripts/get-analyses.py 0.6 2 dev/rom-covered > $@
 
-results/ast-track2-%-covered.sys: onmt-data/ast-track2-src-%.txt.nbest.out
-	cat $^ | python3 scripts/get-analyses.py 0.7 3 $*/ast-covered > $@
-
-results/ast-track3-%-covered.sys: onmt-data/ast-track3-src-%.txt.nbest.out
-	cat $^ | python3 scripts/get-analyses.py 0.6 2 $*/ast-covered > $@
-
-results/crh-track1-%-covered.sys: onmt-data/crh-track1-src-%.txt.nbest.out
-	cat $^ | python3 scripts/get-analyses.py 0.9 4 $*/crh-covered > $@
-
-results/crh-track2-%-covered.sys: onmt-data/crh-track2-src-%.txt.nbest.out
-	cat $^ | python3 scripts/get-analyses.py 0.6 2 $*/crh-covered > $@
-
-results/crh-track3-%-covered.sys: onmt-data/crh-track3-src-%.txt.nbest.out
-	cat $^ | python3 scripts/get-analyses.py 0.1 1 $*/crh-covered > $@
+results/tur-track%-dev-covered.sys: onmt-data/tur-track%-src-dev.txt.nbest.out
+	cat $^ | python3 scripts/get-analyses.py 0.1 1 dev/tur-covered > $@
 
