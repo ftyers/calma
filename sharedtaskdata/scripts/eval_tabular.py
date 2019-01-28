@@ -1,4 +1,4 @@
-from sys import argv
+from sys import argv, stderr
 from collections import defaultdict as dd
 
 def readdata(fn):
@@ -13,6 +13,9 @@ def readdata(fn):
     return data
 
 if __name__=="__main__":
+    if len(argv) != 3:
+        print("USAGE: %s results/LAN-trackN-dev-covered.sys LAN-uncovered" % argv[0],file=stderr)
+        exit(1)
     sysdata = readdata(argv[1])
     golddata = readdata(argv[2])
     for otype in ["analysis","lemma","tag"]:
