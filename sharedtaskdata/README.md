@@ -171,63 +171,20 @@ results/tur-track2-dev-covered.sys
 
 ### Baseline Results for Development Data
 
-These are baseline results for tracks 1 and 2 on the Asturian and Crimean Tatar development data (the track 1 and 2 baseline systems are identical)
+These are baseline results on the Asturian and Crimean Tatar development data. Since we use the same baseline system for tracks 1 and 2, the baseline F1-score is the same for both tracks. 
 
 ```
+$ python3 scripts/eval_tabular.py results/rom-track1-dev-covered.sys dev/rom-uncovered 
+Recall for analysis: 43.33
+Precision for analysis: 42.57
+F1-score for analysis: 42.94
 
-python3 scripts/eval_tabular.py results/rom-track1-dev-covered.sys dev/rom-uncovered
+Recall for lemma: 60.60
+Precision for lemma: 55.91
+F1-score for lemma: 58.16
 
-Recall for analysis: 43.87
-Precision for analysis: 45.30
-F1-score for analysis: 44.58
+Recall for tag: 59.50
+Precision for tag: 60.13
+F1-score for tag: 59.81
 
-Recall for lemma: 61.66
-Precision for lemma: 58.70
-F1-score for lemma: 60.15
-
-Recall for tag: 59.57
-Precision for tag: 62.84
-F1-score for tag: 61.16
-
-python3 scripts/eval_tabular.py results/rom-track2-dev-covered.sys dev/rom-uncovered
-
-Recall for analysis: 43.87
-Precision for analysis: 45.30
-F1-score for analysis: 44.58
-
-Recall for lemma: 61.66
-Precision for lemma: 58.70
-F1-score for lemma: 60.15
-
-Recall for tag: 59.57
-Precision for tag: 62.84
-F1-score for tag: 61.16
-
-python3 scripts/eval_tabular.py results/tur-track1-dev-covered.sys dev/tur-uncovered
-
-Recall for analysis: 31.24
-Precision for analysis: 38.44
-F1-score for analysis: 34.47
-
-Recall for lemma: 57.54
-Precision for lemma: 60.36
-F1-score for lemma: 58.92
-
-Recall for tag: 38.19
-Precision for tag: 46.95
-F1-score for tag: 42.12
-
-python3 scripts/eval_tabular.py results/tur-track2-dev-covered.sys dev/tur-uncovered
-
-Recall for analysis: 31.24
-Precision for analysis: 38.44
-F1-score for analysis: 34.47
-
-Recall for lemma: 57.54
-Precision for lemma: 60.36
-F1-score for lemma: 58.92
-
-Recall for tag: 38.19
-Precision for tag: 46.95
-F1-score for tag: 42.12
 ```
