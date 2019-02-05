@@ -1,3 +1,6 @@
-# 2019 VarDial shared task on cross-lingual morphological analysis
+# calma
 
-Please follow [this link](https://github.com/ftyers/vardial-shared-task) for access to the data.
+Before running, you need to change the value of the variable `ONMTTRAIN` in `scripts/onmt-train.sh`, `ONMTTEST` in `scripts/onmt-test.sh` and `ONMTPREPROCESS` in `Makefile`.
+
+To build everything, run `make all`.
+
